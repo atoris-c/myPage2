@@ -3,22 +3,33 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Document</title>
+    <title>Navigation Menu</title>
 
     <link
-      href="https://fonts.googleapis.com/css?family=Tilt+Warp&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Tilt+Warp:wght@400&family=Inter:wght@300;400;600&display=swap"
       rel="stylesheet"
     />
+    <link href="./globals.css" rel="stylesheet" />
     <link href="./style.css" rel="stylesheet" />
   </head>
   <body>
-    <div class="v7_40">
-      <div class="v7_53"></div>
-      <a href="desktop5.html" class="v7_55">Projects</a>
-      <a href="desktop3.html" class="v7_56">Education History</a>
-      <a href="desktop4.html" class="v7_57">Contact</a>
-      <a href="desktop2.html" class="v7_58">Honors</a>
-      <a href="index.html" class="v7_59">Back to main</a>
+    <div class="overlay-container">
+      <div class="overlay-backdrop"></div>
+      <nav class="overlay-nav" role="navigation" aria-label="Main navigation">
+        <div class="nav-header">
+          <h1 class="nav-title">Portfolio Navigation</h1>
+          <button class="close-btn" onclick="history.back()" aria-label="Go back">
+            <span class="close-icon">&times;</span>
+          </button>
+        </div>
+        <ul class="nav-links">
+          <li><a href="desktop5.html" class="nav-link">Projects</a></li>
+          <li><a href="desktop3.html" class="nav-link">Education History</a></li>
+          <li><a href="desktop4.html" class="nav-link">Contact</a></li>
+          <li><a href="desktop2.html" class="nav-link">Honors</a></li>
+          <li><a href="index.html" class="nav-link nav-link--home">Back to Main</a></li>
+        </ul>
+      </nav>
     </div>
   </body>
 </html>
