@@ -19,6 +19,9 @@ document.addEventListener('DOMContentLoaded', function() {
                 }, 500);
             }, 200);
         }, 2500);
+    } else if (desktop) {
+        // If there's no preloader, show content immediately
+        desktop.classList.add('loaded');
     }
     
     // Find menu buttons using various selectors used across pages
